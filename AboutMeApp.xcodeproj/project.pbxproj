@@ -13,7 +13,7 @@
 		466811CF2B11FE34003DE28F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 466811CD2B11FE34003DE28F /* Main.storyboard */; };
 		466811D12B11FE36003DE28F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 466811D02B11FE36003DE28F /* Assets.xcassets */; };
 		466811D42B11FE36003DE28F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 466811D22B11FE36003DE28F /* LaunchScreen.storyboard */; };
-		466811DC2B121EEC003DE28F /* HelloViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466811DB2B121EEC003DE28F /* HelloViewController.swift */; };
+		466811DC2B121EEC003DE28F /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466811DB2B121EEC003DE28F /* WelcomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +25,7 @@
 		466811D02B11FE36003DE28F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		466811D32B11FE36003DE28F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		466811D52B11FE36003DE28F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		466811DB2B121EEC003DE28F /* HelloViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloViewController.swift; sourceTree = "<group>"; };
+		466811DB2B121EEC003DE28F /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +61,7 @@
 				466811C72B11FE34003DE28F /* AppDelegate.swift */,
 				466811C92B11FE34003DE28F /* SceneDelegate.swift */,
 				466811CB2B11FE34003DE28F /* LoginViewController.swift */,
-				466811DB2B121EEC003DE28F /* HelloViewController.swift */,
+				466811DB2B121EEC003DE28F /* WelcomeViewController.swift */,
 				466811CD2B11FE34003DE28F /* Main.storyboard */,
 				466811D02B11FE36003DE28F /* Assets.xcassets */,
 				466811D22B11FE36003DE28F /* LaunchScreen.storyboard */,
@@ -144,7 +144,7 @@
 				466811CC2B11FE34003DE28F /* LoginViewController.swift in Sources */,
 				466811C82B11FE34003DE28F /* AppDelegate.swift in Sources */,
 				466811CA2B11FE34003DE28F /* SceneDelegate.swift in Sources */,
-				466811DC2B121EEC003DE28F /* HelloViewController.swift in Sources */,
+				466811DC2B121EEC003DE28F /* WelcomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

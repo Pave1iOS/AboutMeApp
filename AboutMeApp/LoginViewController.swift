@@ -11,21 +11,22 @@ final class LoginViewController: UIViewController {
 
     @IBOutlet var userNameTF: UITextField!
     @IBOutlet var passwordTF: UITextField!
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
         
-    }
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let helloVC = segue.destination as? HelloViewController
+        let welcomeVC = segue.destination as? WelcomeViewController
         
-        helloVC?.userName = userNameTF.text
+        welcomeVC?.userName = userNameTF.text
     }
     
-    @IBAction func logInButtonAction() {
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
         
-        if userNameTF.text != "1" || passwordTF.text != "1" {
+        super.touchesBegan(touches, with: event)
+    }
+    
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        guard userNameTF.text == "1", passwordTF.text == "1" else {
+            
             let alert = UIAlertController(
                 title: "login or password is incorrect",
                 message: "please click on “Forgot User Name” and “Forgot Password” to get username and password",
@@ -37,9 +38,12 @@ final class LoginViewController: UIViewController {
             
             present(alert, animated: true)
             alert.addAction(okAction)
+            
+            return false
         }
+        return true
     }
-    
+        
     @IBAction func forgotUserNameAction() {
         let alert = UIAlertController(
             title: "Username",
@@ -68,6 +72,4 @@ final class LoginViewController: UIViewController {
         userNameTF.text = ""
         passwordTF.text = ""
     }
-
 }
-

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class HelloViewController: UIViewController {
+final class WelcomeViewController: UIViewController {
     
     @IBOutlet var userNameLabel: UILabel!
     
@@ -17,6 +17,4 @@ class HelloViewController: UIViewController {
         super.viewDidLoad()
          userNameLabel.text = userName
     }
-    
-
 }

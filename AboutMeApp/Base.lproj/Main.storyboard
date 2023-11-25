@@ -40,7 +40,6 @@
                                                     <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="logInButtonAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Qb-xG-0vi"/>
                                                     <segue destination="oJH-ht-nRQ" kind="presentation" modalPresentationStyle="fullScreen" id="TMT-bD-hYD"/>
                                                 </connections>
                                             </button>
@@ -99,10 +98,10 @@
             </objects>
             <point key="canvasLocation" x="-62" y="-75"/>
         </scene>
-        <!--Hello View Controller-->
+        <!--Welcome View Controller-->
         <scene sceneID="qZY-FK-ESD">
             <objects>
-                <viewController id="oJH-ht-nRQ" customClass="HelloViewController" customModule="AboutMeApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="oJH-ht-nRQ" customClass="WelcomeViewController" customModule="AboutMeApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wHm-nY-EJJ">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -146,14 +145,14 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WPr-Iq-rgI">
-                                <rect key="frame" x="152.66666666666666" y="763" width="88" height="36"/>
+                                <rect key="frame" x="151.33333333333334" y="763" width="90.333333333333343" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="pqD-sG-xUq"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="88" id="wze-iC-Sm2"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Log Out">
-                                    <fontDescription key="titleFontDescription" type="system" weight="light" pointSize="18"/>
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="18"/>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
@@ -177,7 +176,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="userNameLabel" destination="Qbk-he-eEI" id="zpd-DN-49b"/>
+                        <outlet property="userNameLabel" destination="Qbk-he-eEI" id="GYM-1W-71h"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TSA-bP-7Lw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

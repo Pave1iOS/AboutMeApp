@@ -17,6 +17,12 @@ final class LoginViewController: UIViewController {
         
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let helloVC = segue.destination as? HelloViewController
+        
+        helloVC?.userName = userNameTF.text
+    }
+    
     @IBAction func logInButtonAction() {
         
         if userNameTF.text != "1" || passwordTF.text != "1" {
@@ -58,6 +64,12 @@ final class LoginViewController: UIViewController {
         
         present(alert, animated: true)
         alert.addAction(okAction)
+    }
+    
+    @IBAction func unwind(for segue: UIStoryboardSegue) {
+        //let helloVC = segue.source as? HelloViewController
+        
+        
     }
     
     

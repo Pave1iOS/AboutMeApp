@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oJH-ht-nRQ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
@@ -41,6 +41,7 @@
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="logInButtonAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Qb-xG-0vi"/>
+                                                    <segue destination="oJH-ht-nRQ" kind="presentation" modalPresentationStyle="fullScreen" id="TMT-bD-hYD"/>
                                                 </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="ENr-Th-JEN">
@@ -145,7 +146,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WPr-Iq-rgI">
-                                <rect key="frame" x="152.66666666666666" y="727" width="88" height="36"/>
+                                <rect key="frame" x="152.66666666666666" y="763" width="88" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="pqD-sG-xUq"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="88" id="wze-iC-Sm2"/>
@@ -172,10 +173,13 @@
                             <constraint firstItem="hT7-Rb-JLO" firstAttribute="trailing" secondItem="TOf-1n-r6G" secondAttribute="trailing" id="uy5-hi-Bij"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="userNameLabel" destination="Qbk-he-eEI" id="zpd-DN-49b"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TSA-bP-7Lw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="959.5419847328244" y="-75.352112676056336"/>
+            <point key="canvasLocation" x="746" y="-75"/>
         </scene>
     </scenes>
     <resources>

@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		466811C82B11FE34003DE28F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466811C72B11FE34003DE28F /* AppDelegate.swift */; };
 		466811CA2B11FE34003DE28F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466811C92B11FE34003DE28F /* SceneDelegate.swift */; };
-		466811CC2B11FE34003DE28F /* AuthorizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466811CB2B11FE34003DE28F /* AuthorizationViewController.swift */; };
+		466811CC2B11FE34003DE28F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466811CB2B11FE34003DE28F /* LoginViewController.swift */; };
 		466811CF2B11FE34003DE28F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 466811CD2B11FE34003DE28F /* Main.storyboard */; };
 		466811D12B11FE36003DE28F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 466811D02B11FE36003DE28F /* Assets.xcassets */; };
 		466811D42B11FE36003DE28F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 466811D22B11FE36003DE28F /* LaunchScreen.storyboard */; };
+		466811DC2B121EEC003DE28F /* HelloViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466811DB2B121EEC003DE28F /* HelloViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		466811C42B11FE34003DE28F /* AboutMeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AboutMeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		466811C72B11FE34003DE28F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		466811C92B11FE34003DE28F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		466811CB2B11FE34003DE28F /* AuthorizationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationViewController.swift; sourceTree = "<group>"; };
+		466811CB2B11FE34003DE28F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		466811CE2B11FE34003DE28F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		466811D02B11FE36003DE28F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		466811D32B11FE36003DE28F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		466811D52B11FE36003DE28F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		466811DB2B121EEC003DE28F /* HelloViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +60,8 @@
 			children = (
 				466811C72B11FE34003DE28F /* AppDelegate.swift */,
 				466811C92B11FE34003DE28F /* SceneDelegate.swift */,
-				466811CB2B11FE34003DE28F /* AuthorizationViewController.swift */,
+				466811CB2B11FE34003DE28F /* LoginViewController.swift */,
+				466811DB2B121EEC003DE28F /* HelloViewController.swift */,
 				466811CD2B11FE34003DE28F /* Main.storyboard */,
 				466811D02B11FE36003DE28F /* Assets.xcassets */,
 				466811D22B11FE36003DE28F /* LaunchScreen.storyboard */,
@@ -138,9 +141,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				466811CC2B11FE34003DE28F /* AuthorizationViewController.swift in Sources */,
+				466811CC2B11FE34003DE28F /* LoginViewController.swift in Sources */,
 				466811C82B11FE34003DE28F /* AppDelegate.swift in Sources */,
 				466811CA2B11FE34003DE28F /* SceneDelegate.swift in Sources */,
+				466811DC2B121EEC003DE28F /* HelloViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

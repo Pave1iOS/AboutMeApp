@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Authorization View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AboutMeApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="AuthorizationViewController" customModule="AboutMeApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -39,6 +39,9 @@
                                                 <buttonConfiguration key="configuration" style="filled" title="Log In">
                                                     <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="logInButtonAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Qb-xG-0vi"/>
+                                                </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="ENr-Th-JEN">
                                                 <rect key="frame" x="0.0" y="132" width="361" height="30"/>
@@ -53,6 +56,9 @@
                                                         <state key="normal" title="Forgot user name?">
                                                             <color key="titleColor" name="AccentColor"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="forgotUserNameAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="n08-Wh-eFC"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EnU-nU-Fzb">
                                                         <rect key="frame" x="238" y="0.0" width="123" height="30"/>
@@ -64,6 +70,9 @@
                                                         <state key="normal" title="Forgot password?">
                                                             <color key="titleColor" name="AccentColor"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="forgotPasswordAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="Brc-4X-Cmb"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -80,6 +89,10 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kkl-wh-U2K" secondAttribute="trailing" constant="16" id="zTg-IW-v1e"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="passwordTF" destination="wJy-75-1gt" id="ZDB-c2-357"/>
+                        <outlet property="userNameTF" destination="NQf-h4-ooo" id="HL0-af-bhw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

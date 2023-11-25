@@ -31,15 +31,13 @@ final class LoginViewController: UIViewController {
                 message: "please click on “Forgot User Name” and “Forgot Password” to get username and password",
                 preferredStyle: .alert
             )
-            let okAction = UIAlertAction(title: "OK", style: .default)
+            let okAction = UIAlertAction(title: "OK", style: .default) { _ in
+                self.passwordTF.text = ""
+            }
             
             present(alert, animated: true)
             alert.addAction(okAction)
-        } else {
-            print("good job")
         }
-        
-        
     }
     
     @IBAction func forgotUserNameAction() {
@@ -67,13 +65,9 @@ final class LoginViewController: UIViewController {
     }
     
     @IBAction func unwind(for segue: UIStoryboardSegue) {
-        //let helloVC = segue.source as? HelloViewController
-        
-        
+        userNameTF.text = ""
+        passwordTF.text = ""
     }
-    
-    
-
 
 }
 

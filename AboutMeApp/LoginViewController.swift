@@ -21,9 +21,9 @@ final class LoginViewController: UIViewController {
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        view.endEditing(true)
-        
         super.touchesBegan(touches, with: event)
+        
+        view.endEditing(true)
     }
     
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
@@ -70,7 +70,9 @@ final class LoginViewController: UIViewController {
         
         let okAction = UIAlertAction(title: "OK", style: .default) { _ in
             
-            clearPassword ? (self.passwordTF.text = "") : (self.passwordTF.text = self.passwordTF.text)
+            if clearPassword {
+                self.passwordTF.text = ""
+            }
         }
         alert.addAction(okAction)
     }

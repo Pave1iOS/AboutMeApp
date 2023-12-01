@@ -5,12 +5,10 @@
 //  Created by Pavel Gribachev on 30.11.2023.
 //
 
-import Foundation
-
 struct User {
     let userName = "1"
     let password = "1"
-    
+        
     let person: Person
     
     static func getUser() -> User {

@@ -98,8 +98,8 @@
 			children = (
 				464A3F172B191FA300613317 /* ViewControllers */,
 				464A3F1B2B19209400613317 /* Models */,
-				464A3F162B191F9100613317 /* App */,
 				464A3F182B191FC600613317 /* Storyboards */,
+				464A3F162B191F9100613317 /* App */,
 				466811D02B11FE36003DE28F /* Assets.xcassets */,
 			);
 			path = AboutMeApp;

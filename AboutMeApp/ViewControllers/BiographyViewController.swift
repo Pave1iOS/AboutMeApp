@@ -7,23 +7,16 @@
 
 import UIKit
 
-class BiographyViewController: UIViewController {
-
+final class BiographyViewController: UIViewController {
+    
+    @IBOutlet var biographyLabel: UILabel!
+    
+    var biography: String!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        biographyLabel.text = biography
+        
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

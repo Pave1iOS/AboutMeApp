@@ -349,14 +349,30 @@
                     <view key="view" contentMode="scaleToFill" id="uyf-61-D0q">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3fQ-mc-srV">
+                                <rect key="frame" x="16" y="135" width="288" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="r9z-he-cyd"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="r9z-he-cyd" firstAttribute="trailing" secondItem="3fQ-mc-srV" secondAttribute="trailing" constant="16" id="7Pw-Zt-09l"/>
+                            <constraint firstItem="3fQ-mc-srV" firstAttribute="leading" secondItem="r9z-he-cyd" secondAttribute="leading" constant="16" id="9y2-yi-DuM"/>
+                            <constraint firstItem="3fQ-mc-srV" firstAttribute="top" secondItem="r9z-he-cyd" secondAttribute="top" multiplier="4:3" constant="11.5" id="sfb-eM-Orf"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="qaH-xU-6vL"/>
+                    <connections>
+                        <outlet property="biographyLabel" destination="3fQ-mc-srV" id="uy7-ZO-1Us"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dak-vi-Mfy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3752" y="718"/>
+            <point key="canvasLocation" x="3751.875" y="717.25352112676057"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="NQK-JF-pFa">

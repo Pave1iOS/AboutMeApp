@@ -34,6 +34,7 @@ final class LoginViewController: UIViewController {
                 personVC?.department = user.person.department
                 personVC?.post = user.person.post
                 personVC?.hobby = user.person.hobbies
+                personVC?.biography = user.person.biography
             }
         }
     }

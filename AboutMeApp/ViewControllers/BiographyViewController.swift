@@ -17,6 +17,5 @@ final class BiographyViewController: UIViewController {
         super.viewDidLoad()
         
         biographyLabel.text = biography
-        
     }
 }

@@ -24,12 +24,13 @@ final class PersonViewController: UIViewController {
     var department: String!
     var post: String!
     var hobby: String!
+    var biography: String!
     
     var imageProfile: UIImage = .profilePhoto
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         nameLabel.text = name
         lastNameLabel.text = lastName
         companyLabel.text = company
@@ -42,7 +43,9 @@ final class PersonViewController: UIViewController {
         photoImageView.image = imageProfile
     }
     
-    
-    
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let bioVC = segue.destination as? BiographyViewController
+        bioVC?.title = "\(name ?? "") \(lastName ?? "")"
+        bioVC?.biography = biography
+    }
 }

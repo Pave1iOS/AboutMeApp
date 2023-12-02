@@ -45,6 +45,7 @@ final class PersonViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let bioVC = segue.destination as? BiographyViewController
+        
         bioVC?.title = "\(name ?? "") \(lastName ?? "")"
         bioVC?.biography = biography
     }

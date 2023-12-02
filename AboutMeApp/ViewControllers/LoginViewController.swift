@@ -55,9 +55,9 @@ final class LoginViewController: UIViewController {
                         please click on “Forgot User Name”
                         and “Forgot Password” 
                         to get username and password
-                        """,
-                clearPassword: true
-            )
+                        """) {
+                            self.passwordTF.text = ""
+                        }
             return false
         }
         return true
@@ -65,11 +65,11 @@ final class LoginViewController: UIViewController {
     
     //MARK: IBAction
     @IBAction func forgotUserNameAction() {
-        showAlert(withTitle: "Username", andMessage: user.userName, clearPassword: false)
+        showAlert(withTitle: "Username", andMessage: user.userName)
     }
     
     @IBAction func forgotPasswordAction() {
-        showAlert(withTitle: "Password", andMessage: user.password, clearPassword: false)
+        showAlert(withTitle: "Password", andMessage: user.password)
     }
     
     @IBAction func unwind(for segue: UIStoryboardSegue) {
@@ -81,17 +81,14 @@ final class LoginViewController: UIViewController {
     private func showAlert(
         withTitle title: String,
         andMessage message: String,
-        clearPassword: Bool
+        heandler: (() -> Void)? = nil
     ) {
         
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         present(alert, animated: true)
         
         let okAction = UIAlertAction(title: "OK", style: .default) { _ in
-            
-            if clearPassword {
-                self.passwordTF.text = ""
-            }
+            heandler?()
         }
         alert.addAction(okAction)
     }

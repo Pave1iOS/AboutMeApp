@@ -42,7 +42,6 @@ final class PersonViewController: UIViewController {
         hobbyLabel.text = hobby
         
         photoImageView.layer.cornerRadius = photoImageView.frame.width / 2
-        
         photoImageView.image = imageProfile
     }
     

@@ -21,8 +21,10 @@ final class LoginViewController: UIViewController {
         
         tabBarVC?.viewControllers?.forEach{ viewController in
             if let welcomeVC = viewController as? WelcomeViewController {
+                
                 welcomeVC.userName = userNameTF.text
                 welcomeVC.personName = user.person.name + " " + user.person.lastName
+                
             } else if let navigationVC = viewController as? UINavigationController {
                 let personVC = navigationVC.topViewController as? PersonViewController
                 

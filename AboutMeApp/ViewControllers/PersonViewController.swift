@@ -11,6 +11,7 @@ final class PersonViewController: UIViewController {
     
     @IBOutlet var nameLabel: UILabel!
     @IBOutlet var lastNameLabel: UILabel!
+    @IBOutlet var ageLabel: UILabel!
     @IBOutlet var companyLabel: UILabel!
     @IBOutlet var departmentLabel: UILabel!
     @IBOutlet var postLabel: UILabel!
@@ -20,6 +21,7 @@ final class PersonViewController: UIViewController {
     
     var name: String!
     var lastName: String!
+    var age: String!
     var company: String!
     var department: String!
     var post: String!
@@ -30,9 +32,10 @@ final class PersonViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         nameLabel.text = name
         lastNameLabel.text = lastName
+        ageLabel.text = age
         companyLabel.text = company
         departmentLabel.text = department
         postLabel.text = post

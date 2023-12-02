@@ -15,7 +15,8 @@ struct User {
         User(
             person: Person(
                 name: "Павел",
-                lastName: "Грибачев",
+                lastName: "Грибачев", 
+                age: "29",
                 company: "Налоговая",
                 department: "Инженер",
                 post: "Старший инженер в смене",
@@ -28,6 +29,7 @@ struct User {
 struct Person {
     let name: String
     let lastName: String
+    let age: String
     let company: String
     let department: String
     let post: String
@@ -55,9 +57,10 @@ struct Person {
         1.5 года за которые конечно я все забыл...
         За это время я изучил HTML5, CSS (SASS), 
         Figma. Но понял что Web программирование 
-        не мое и вернулся на Swift,
-        купив этот курс. И на этот раз я доведу
-        дело до конца, чего бы не случилось.
+        не мое и вернулся на Swift, купив этот
+        курс. Я очень надеюсь что не стар
+        для вхождения в IT, но в любом случае
+        я доведу дело до конца, чего бы не случилось.
         """
     }
 }

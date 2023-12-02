@@ -30,6 +30,7 @@ final class LoginViewController: UIViewController {
                 
                 personVC?.name = user.person.name
                 personVC?.lastName = user.person.lastName
+                personVC?.age = user.person.age
                 personVC?.company = user.person.company
                 personVC?.department = user.person.department
                 personVC?.post = user.person.post

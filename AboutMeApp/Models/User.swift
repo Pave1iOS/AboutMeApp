@@ -6,22 +6,16 @@
 //
 
 struct User {
-    let userName = "1"
-    let password = "1"
+    let userName: String
+    let password: String
         
     let person: Person
     
     static func getUser() -> User {
         User(
-            person: Person(
-                name: "Павел",
-                lastName: "Грибачев", 
-                age: "29",
-                company: "Налоговая",
-                department: "Инженер",
-                post: "Старший инженер в смене",
-                hobbies: "Бокс и программирование"
-            )
+            userName: "1",
+            password: "1",
+            person: Person.getPerson()
         )
     }
 }
@@ -62,5 +56,17 @@ struct Person {
         для вхождения в IT, но в любом случае
         я доведу дело до конца, чего бы не случилось.
         """
+    }
+    
+    static func getPerson() -> Person {
+        Person(
+            name: "Павел",
+            lastName: "Грибачев",
+            age: "29",
+            company: "Налоговая",
+            department: "Инженер",
+            post: "Старший инженер в смене",
+            hobbies: "Бокс и программирование"
+        )
     }
 }
